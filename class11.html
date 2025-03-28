@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 11 Subjects</title>
+    <link rel="stylesheet" href="str.css">
+</head>
+<body>
+
+    <header>
+        <h1>📚 Welcome to Class 11 Subjects</h1>
+    </header>
+
+    <div class="container">
+        <!-- Science Section -->
+        <div class="subject-category science">
+            <h2>🔬 Science</h2>
+            <ul>
+                <li onclick="openPage('Physics')">Physics</li>
+                <li onclick="openPage('Chemistry')">Chemistry</li>
+                <li onclick="openPage('Biology')">Biology</li>
+            </ul>
+        </div>
+
+        <!-- Arts Section -->
+        <div class="subject-category arts">
+            <h2>🎭 Arts</h2>
+            <ul>
+                <li onclick="openPage('History')">History</li>
+                <li onclick="openPage('Political Science')">Political Science</li>
+                <li onclick="openPage('Geography')">Geography</li>
+                <li onclick="openPage('Economics')">Economics</li>
+                <li onclick="openPage('Sociology')">Sociology</li>
+                <li onclick="openPage('Psychology')">Psychology</li>
+                <li onclick="openPage('Philosophy')">Philosophy</li>
+                <li onclick="openPage('English')">English</li>
+                <li onclick="openPage('Fine Arts')">Fine Arts (Optional)</li>
+                <li onclick="openPage('Legal Studies')">Legal Studies (Optional)</li>
+                <li onclick="openPage('Human Rights & Gender Studies')">Human Rights & Gender Studies (Optional)</li>
+            </ul>
+        </div>
+
+        <!-- Commerce Section -->
+        <div class="subject-category commerce">
+            <h2>📈 Commerce</h2>
+            <ul>
+                <li onclick="openPage('Accountancy')">Accountancy</li>
+                <li onclick="openPage('Business Studies')">Business Studies</li>
+                <li onclick="openPage('Economics')">Economics</li>
+                <li onclick="openPage('English')">English</li>
+                <li onclick="openPage('Mathematics')">Mathematics</li>
+                <li onclick="openPage('Informatics Practices')">Informatics Practices</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function openPage(subject) {
+            // Open the related subject file when clicked
+            window.location.href = `class11${subject.toLowerCase().replace(/\s+/g, '')}.html`;
+        }
+    </script>
+
+</body>
+</html>
